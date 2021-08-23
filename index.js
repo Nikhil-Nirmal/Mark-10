@@ -3,6 +3,19 @@ const inp2 = document.querySelector('.input2');
 const out = document.querySelector('.output');
 
 let allNotes = [2000, 500, 100, 50 , 20, 10, 5, 1]
+document.getElementById("input2").style.display = 'none';
+document.getElementById("check_btn").style.display = 'none';
+function nextbtn_onclick(){
+    let val1 = Number (inp1.value);
+    if (val1 == 0){
+        alert('Enter The Bill Amount Bruh');
+    }
+    else{
+        document.getElementById("input2").style.display = 'block';   
+        document.getElementById("next_btn").style.display = 'none';
+        document.getElementById("check_btn").style.display = 'block';
+    }
+}
 function btn_onclick() {
     let val1 = Number (inp1.value);
     let val2 = Number (inp2.value);
